@@ -1,0 +1,68 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.Main{
+  display: flex;
+  width: 100%;
+  padding: 50px;
+  gap: 15px;
+}
+.sidenav{
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width:30%;
+}
+.ConversationDetails{
+  width: 70%;
+}
+
+.Conversation:hover{
+  background-color: rgb(238, 238, 238);
+}
+.message{
+width: 20.3rem;
+border-radius: 35px;
+min-height: 70px;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center;
+color: white;
+margin-bottom: 15px;
+}
+.messageContainer.Other{
+  float: left;
+}
+.messageContainer.Other .message{
+  background-color:  cadetblue;
+}
+.messageContainer.Logged .message{
+  background-color:cornflowerblue ;
+}
+.messageContainer.Logged{
+  flex-direction: row-reverse;
+  float: right;
+}
+.messageContainer{
+  width: 100%;
+  display: flex;
+}
+
+.ConversationInput{
+  position: absolute;
+bottom: 0;
+padding: 15px;
+/* width: 100%; */
+display: flex;
+align-items: center;
+justify-content: center;
+gap:25px
+}
+.ConversationInput input{
+  background: gainsboro;
+  padding: 15px;
+  width:50%;
+}
